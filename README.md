@@ -67,6 +67,6 @@ Se crea un proyecto de base de datos en la página oficial de Supabase para impl
 Por motivos de seguridad, las credenciales necesarias para ejecutar el proyecto están almacenadas en un espacio distinto. Se requiere iniciar sesión con una cuenta del Tec para acceder a dichas credenciales. Cada conjunto de credenciales debe ser descargado y aplicado en sus respectivas áreas, ya sea en el backend, frontend o el notebook. Aquí está el enlace: [Credenciales](https://drive.google.com/drive/folders/1nQ783o7gSLVzFEbj22j6N-TOQDiojkaz?usp=sharing)
 
 ## Plataforma web
-Si desea registrarse y probar la plataforma en línea, puede registrarse usando [este enlace](https://data-telco-masking-web.vercel.app/) con este código de grupo: 
+Si desea registrarse y probar la plataforma en línea, puede registrarse usando [este enlace](https://data-telco-masking-web.vercel.app/) con este código de grupo: hg432
 No usar cuentas del Tec de Monterrey
 Preferentemente usar un navegador con Chromium
