@@ -1,0 +1,29 @@
+.cardTable {
+    background-color: #FFFFFF;
+    width: calc(95vw - 150px);
+    height: 90vh;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.25);
+    margin: 0 0 .5vh 2.5vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.textStyle{
+    font-size: 30px;
+    font-weight: bold;
+    color: #CC0841;
+    margin: 2.5vh 0 0 1vw;
+    padding: 5vh 0 5vh 0;
+}
+.textTableHeader{
+    font-weight: bold;
+    font-size: 20px;
+}
+.textTableSize{
+    font-size: 15px;
+ }
+.structureModal{
+    height: 100vh;
+    width: 80vw;
+    padding: 16;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}

@@ -1,0 +1,94 @@
+/*1230px width*/
+#table_container {
+    width: 90%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 1% 5%;
+}
+
+.image_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+    margin: 0% 5%;
+}
+
+.image_container {
+    margin: 1vw;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#feature_image_container {
+    height: 90vh;
+}
+
+#metrics {
+    border-collapse: collapse;
+    border: 0px solid #fff;
+    width: 100%;
+}
+
+#metrics tr {
+    background: #eee;
+}
+
+.change-image-row:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.change-image-row:hover td {
+    background-color: #ddd;
+    cursor: pointer;
+}   
+
+#metrics td {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border: 1px solid #fff;
+}
+
+#metrics th {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    border: 1px solid #fff;
+    background-color: #CC0841;
+    color: #fff;
+}
+
+#metrics td:first-child {
+    text-align: right;
+}
+
+#metrics tr.hidden td {
+    height: 0;
+    padding: 0;
+    font-size: 0px;
+    overflow: hidden;
+    border: 0px solid red;
+    transition: height 0.6s, padding 0.6s, font-size 0.6s;
+}
+
+#metrics tr td {
+    height: auto; /* Set to an appropriate height based on your content */
+    padding: 8px;
+    font-size: 1rem;
+    transition: height 0.6s, padding 0.6s, font-size 0.6s, background-color 0.2s;
+}
+
+button {
+    cursor: pointer;
+}
+
+.primary-button {
+    cursor: pointer;
+    background-color: #CC0841;
+    padding: 1.5vh 2vw;
+    border: 0px;
+    border-radius: 4px;
+    color: #fff; 
+    margin: 1vh 0px;
+    font-size: 100%;
+}

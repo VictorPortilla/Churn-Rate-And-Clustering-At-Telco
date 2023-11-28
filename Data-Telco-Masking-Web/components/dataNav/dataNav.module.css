@@ -1,0 +1,15 @@
+.space{
+    background-color: #FFFFFF;
+    width: calc(100vw - 150px);
+    height: 50px;
+    border-bottom: .5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #CC0841;
+    font-weight: bold;
+    margin: 0 10px 0 10px;
+}

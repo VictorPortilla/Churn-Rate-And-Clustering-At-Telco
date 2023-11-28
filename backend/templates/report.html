@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Report
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{url_for('static',filename='report_style.css')}}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        // Hide all rows except the first and last
+        $('tr:nth-child(n+2):not(:last-child)').addClass('hidden');
+        // Toggle the hidden class on button click
+        $('button').on('click', function() {
+          $('tr:nth-child(n+2):not(:last-child)').toggleClass('hidden');
+        });
+        // Add 'change-image-row' class to the table rows
+        $('table tr').not(':first').addClass('change-image-row');
+        // When a row is clicked, update the image source
+        $('.change-image-row').on('click', function() {
+          var clickedName = $(this).find('td:first').text();
+          console.log(clickedName);
+
+          var imageName = clickedName.replace(/\s+/g, '_').toUpperCase();  // Assuming your array has names in this format
+          var imagePath = '{{img_path|string}}' + imageName + ".png";
+          
+          checkImageExists(imagePath, function(exists) {
+            if (exists) {
+              $('#feature_image').fadeOut('fast', function() {
+                // Update the image source in the corresponding image container
+                $(this).attr('src', imagePath).fadeIn(1000);
+              });
+            } else {
+              var defaultImagePath = '{{default_img_path|string}}';
+              $('#feature_image').fadeOut('fast', function() {
+                $(this).attr('src', defaultImagePath).fadeIn(1000);
+              });
+            }
+            document.getElementById('feature_image_container').scrollIntoView({ behavior: 'smooth' });
+          });
+        });
+        // Function to check if an image exists
+        function checkImageExists(imageUrl, callback) {
+          var img = new Image();
+          img.onload = function() {
+            callback(true);
+          };
+          img.onerror = function() {
+            callback(false);
+          };
+          img.src = imageUrl;
+        } 
+      });
+    </script>
+  </head>
+  <body style="margin: 0%; padding: 0%;">
+    <div style="display: flex; flex-direction: column;">
+      <div id="table_container">
+        <button type="button" class="primary-button">Show/Hide</button>
+        {{table|safe}}
+      </div>
+      <div class="image_row">
+        <div class="image_container">
+          <img src="{{url_for('static',filename='images/shap_feature_importance/'+id+'.png')}}" style="max-width: 100%;"/>
+        </div>
+        <div class="image_container">
+          <img src="{{url_for('static',filename='images/shap_feature_importance/general.png')}}" style="max-width: 100%;"/>
+        </div>
+      </div>
+      <div class="image_row">
+        <div id="feature_image_container" class="image_container">
+          <img id="feature_image" src="{{url_for('static',filename='images/plot_cluster/DIAS_FRECUENCIA_RECARGA.png')}}" style="max-width: 100%;"/>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+.the_body {
+  width: 100vw;
+  height: 100vh;
+}
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  height: 20%;
+  align-items: center;
+}
+.imageNav{
+  margin-left: 4rem;
+  width: auto; 
+  height: 60%; 
+  
+}
+.optionNav{
+  margin-right: 4rem;
+  color: #CC0841;
+  font-weight:bold;
+  font-size: 20px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  height: 80%;
+  width: 100%;
+}
+
+.section_side {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+.card_holder {
+}
+.image{
+  width: 90%;
+  height: auto;
+  opacity: .6;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  background-color: green;
+
+  border-radius: 20px;
+
+  width: 30%;
+  min-width: 320px;
+  max-width: 400px;
+
+  height: 80%;
+  min-height: 450px;
+  margin-right: 12vw;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.25);
+}
+.header{
+  color: #CC0841;
+}
+.formulary_container {
+  display: flex;
+  flex-direction: column;
+  background-color: yellow;
+  justify-content: center;
+  align-items: center;
+  height: 45%; 
+}
+
+.persB {
+  background-color: #CC0841;
+  /* Color diferente al pasar el mouse */
+}
+.persBR {
+  background-color: #CC0841;
+  /* Color diferente al pasar el mouse */
+}
+.persB:hover{
+  background-color: #CC0841;
+  /* Color diferente al pasar el mouse */
+}
+.persInp {
+  background-color: #F2F2F1;
+  width: 80%;
+}
+.allP {
+  font-size: 20px;
+  color: #000000ad;
+  background-color: green;
+}

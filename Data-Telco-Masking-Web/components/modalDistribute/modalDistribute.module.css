@@ -1,0 +1,64 @@
+.structureModal{
+    height: 100vh;
+    width: 80vw;
+    padding: 16;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.scrollableDiv{
+    overflow: auto;
+    height: 100vh;
+    scrollbar-width:thin;
+}
+.headers{
+    margin: 50px 0 25px 80px;
+    color: #CC0841;
+    font-size: 30px;
+    font-weight: bold;
+}
+.inputs{
+    display: flex;
+    margin-left: 80px;
+}
+.input{
+    width: 12vw;
+    margin: 0 30px 0 0;
+}
+.usersDiv{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.usersText{
+    margin: 0 1vw 0 0;
+    font-weight: bold;
+}
+.usersIcon{
+    margin: 0 7.3vw 0 0;
+}
+.selectMediaT{
+    background-color: #D9D9D9;
+    width: 67vw;
+    height: 35vh;
+    margin: 2vh 0 0 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.selectMediaTInput{
+    background-color: #D9D9D9;
+    width: 100%;
+    height:100%;
+    text-align: left; /* Alinea el texto a la izquierda */
+    vertical-align: top; 
+    justify-content: start;
+    align-items: start;
+    
+    
+    
+}
+.buttonGroup{
+    margin: 20px 0 20px 80px;
+}
+

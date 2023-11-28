@@ -1,0 +1,101 @@
+.body{
+    display: flex;
+    justify-content:space-between;
+    height: calc(100vh - 50px);
+    width: calc(100vw - 150px);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.twoDivs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card {
+    
+    background-color: #FFFFFF;
+    width: calc(50vw - 150px);
+    
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.25);
+    margin: 5vh 5vw 0 5vh;
+}
+.cardLonely {
+    
+    background-color: #FFFFFF;
+    width: calc(55vw - 150px);
+    height: 83vh;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.25);
+    margin: 5vh 5vh 0 0;
+}
+.textContainer{
+  display: block;
+  width: 16.6%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cardTable {
+    background-color: #FFFFFF;
+    width: calc(50vw - 150px);
+    height: 70vh;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.25);
+    margin: 0 0 5vh 5vh;
+
+}
+.textStyle{
+    font-size: 20px;
+    font-weight: bold;
+    color: #CC0841;
+    margin-left: 20px;
+}
+.textTableSize{
+   font-size: 10px;
+}
+.text2TableSize{
+    font-size: 15px;
+ }
+.textTableHeader{
+    font-weight: bold;
+    font-size: 10px;
+}
+.text2TableHeader{
+    font-weight:normal;
+    font-size: 20px;
+}
+@media screen and (max-width: 900px) {
+    .body{
+        height: auto;
+        display:block;
+        
+        justify-content:center;
+        
+    }
+    .twoDivs{
+        display: block;
+        
+    }
+    .card {
+        width: 80%;
+        margin-left: 5vw; 
+    }
+    .cardTable {
+        
+        width: 80%;
+        height: 70vh;
+        margin: 0 0 5vh 5vw;
+    
+    }
+    .cardLonely {
+    
+        width: 80%;
+       
+        
+        margin: 0 0 5vh 5vw;
+    }
+    .textStyle{
+        padding: 10px 0 10px 0;
+    }
+   
+}
+
+
