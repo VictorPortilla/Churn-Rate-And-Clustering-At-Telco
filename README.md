@@ -1,5 +1,8 @@
 ![Image](https://github.com/VictorPortilla/Churn-Rate-And-Clustering-At-Telco/blob/main/resources/Presentation.png?raw=true)
 
+https://github.com/VictorPortilla/Churn-Rate-And-Clustering-At-Telco/assets/73489755/6b5b8745-f90a-4eae-80fb-762b9d4bdca0
+[Video en YouTube](https://www.youtube.com/watch?v=0Ira65BFHSY)
+
 ## Miembros del equipo
     - Hector Miranda Garcia A01658845
     - Misael Chavez Ramos A01659759
